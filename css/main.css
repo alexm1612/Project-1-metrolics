@@ -15,7 +15,7 @@ html {
   color: #222;
   font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
 
 /*
@@ -92,6 +92,11 @@ h1 {
   color: black;
 }
 
+p {
+  text-align: center;
+  font-size: 0.75em;
+}
+
 /* ==========================================================================
    LAYOUT
    ========================================================================== */
@@ -106,11 +111,39 @@ div, footer, header {
   .heading {
     text-align: center;
   }
+  h1, h2 {
+    font-weight: normal;
+  }
+  
+  
 
   
   /* Small only */
   @media screen and (max-width: 39.9375em) {
-    
+    .slider {
+      display: none;
+    }
+    .row {
+      display: grid;
+    }
+    .s-col-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about h3 {
+      margin: 0;
+    }
+    .heading-about {
+      margin: 0;
+      font-size: 1em; 
+    }
+    .text-about {
+      margin-top: 0.3em;
+      text-align: justify;
+    }
+    .col-about {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+    }
   }
   
   /* Medium and up */
@@ -134,6 +167,11 @@ div, footer, header {
     .m-col-5 {
       grid-template-columns: repeat(5, 1fr);
     }
+
+    .m-1-2 {
+      grid-template-columns: 1fr 2fr;
+    }
+
     .span-full {
       grid-column-start: 1;
       grid-column-end: -1;
@@ -142,7 +180,10 @@ div, footer, header {
   
   /* Medium only */
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    
+    .m-span-full {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
   }
 
   /* Large and up */
@@ -181,12 +222,38 @@ div, footer, header {
    MODULES
    ========================================================================== */
 
+   .p-footer{
+      text-align: justify;
+   }
+
+   .site-name {
+     font-weight: normal;
+     color: rgb(34, 199, 236);
+   }
+
+   p {
+     color: rgb(181, 181, 181);
+   }
+
+   .icon-about {
+     width: 4em;
+   }
+   
+
+  
+   
 
 
 /* ==========================================================================
    THEME
    ========================================================================== */
 
+   .footer {
+     background-color: rgb(7, 25, 52);
+   }
+   .slider {
+     background-color: rgb(243, 240, 236);
+   }
 /*
  * Hide visually and from screen readers
  */
