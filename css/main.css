@@ -101,30 +101,39 @@ p {
    LAYOUT
    ========================================================================== */
 
-div, footer, header {
+/*  div, footer, header {
   border: 1px solid #ccc;
 }
 .column {
   background-color: aliceblue;
   margin: 1rem;
 }
+*/ 
   .heading {
     text-align: center;
   }
   h1, h2 {
     font-weight: normal;
   }
+  .column {
+    margin: 1rem;
+  }
+  
+  
+  
   
   
 
   
   /* Small only */
   @media screen and (max-width: 39.9375em) {
-    .slider {
-      display: none;
-    }
+    
     .row {
       display: grid;
+      margin: 0 auto;
+    }
+    .s-hidden {
+      display: none;
     }
     .s-col-2 {
       grid-template-columns: 1fr 1fr;
@@ -136,24 +145,37 @@ div, footer, header {
       margin: 0;
       font-size: 1em; 
     }
+    .main-heading {
+      margin: 0;
+    }
+    .main-text {
+      margin-top: 0.3em;
+    }
     .text-about {
       margin-top: 0.3em;
       text-align: justify;
     }
-    .col-about {
+    .s-1-5 {
       display: grid;
       grid-template-columns: 1fr 5fr;
     }
+    .footer-about-icons {
+      display: flex;
+      justify-content: center;
+    }
+    .icon-footer {
+      width: 4em;
+      margin: 0.2em;
+    }
+    
   }
   
   /* Medium and up */
   @media screen and (min-width: 40em) {
-    .row {
+     .row {
       display: grid;
-      width: 85vw;
-      max-width: 70rem;
       margin: 0 auto;
-    }
+    } 
     
     .m-col-2 {
       grid-template-columns: 1fr 1fr;
@@ -171,11 +193,30 @@ div, footer, header {
     .m-1-2 {
       grid-template-columns: 1fr 2fr;
     }
+    .m-1-5 {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+    }
 
     .span-full {
       grid-column-start: 1;
       grid-column-end: -1;
     }
+    .icon-footer {
+      width: 3em;
+    }
+    .icon {
+      display: flex;
+      justify-content: center;
+    }
+    .description-about {
+      text-align: center;
+    }
+    .big-project > img {
+      height: 15rem;
+    }
+    
+    
   }
   
   /* Medium only */
@@ -190,8 +231,7 @@ div, footer, header {
   @media screen and (min-width: 64em) {
     .row {
       display: grid;
-      width: 85vw;
-      max-width: 70rem;
+      max-width: 75rem;
       margin: 0 auto;
     }
     
@@ -224,6 +264,8 @@ div, footer, header {
 
    .p-footer{
       text-align: justify;
+      color: white;
+      font-style: italic;
    }
 
    .site-name {
@@ -232,12 +274,53 @@ div, footer, header {
    }
 
    p {
-     color: rgb(181, 181, 181);
+     color: rgb(154, 154, 154);
    }
 
    .icon-about {
      width: 4em;
    }
+   
+   
+   
+   .project > img {
+     height: 10rem;
+   }
+   .sponsors-img > img {
+     height: 5rem;
+   }
+   
+   .icon-peewee {
+     width: 10em;
+     border-radius: 50%;
+   }
+   .description-footer {
+     margin-left: 1.5em;
+   }
+   .tweet {
+     color: white;
+     text-align: left;
+   }
+   .username-tweet {
+    font-weight: bolder;
+    color: rgb(34, 199, 236);
+   }
+   .tweet-icon {
+    width: 2.5em;
+    border-radius: 50%;
+   }
+   .col-tweet {
+     display: grid;
+     grid-template-columns: 1fr 8fr;
+     margin: 0 auto;
+   }
+    .text_subheading {
+     color: white;
+     text-align: justify;
+    }
+   
+   
+   
    
 
   
@@ -249,7 +332,8 @@ div, footer, header {
    ========================================================================== */
 
    .footer {
-     background-color: rgb(7, 25, 52);
+     background-color: rgb(25, 36, 45);
+     color: white;
    }
    .slider {
      background-color: rgb(243, 240, 236);

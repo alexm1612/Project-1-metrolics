@@ -24,7 +24,7 @@
 
 <body>
   <header class="header">
-    <div class="row s-col-2 m-1-2">
+    <div class="row s-col-2 m-1-5">
       <div class="column">
         <p>logo here</p>
       </div>
@@ -34,7 +34,7 @@
     </div>
   </header>
 
-  <div class="slider">
+  <div class="slider s-hidden">
     <div class="row">
       <div class="column">
         <img src="tile-wide.png" alt="slider">
@@ -51,13 +51,13 @@
   </div>
 
   <div class="about">
-    <div class="row l-col-4">
+    <div class="row m-col-2 l-col-4">
       <div class="column span-full">
-        <h2 class="heading heading-about">Things that we do!</h2>
-        <p class="text">Ask us what we can do for you</p>
+        <h2 class="heading main-heading">Things that we do!</h2>
+        <p class="text main-text">Ask us what we can do for you</p>
       </div>
       
-      <div class="column col-about">
+      <div class="column s-1-5">
         <div class="icon">
           <img class="icon-about" src="icon.png">
         </div>
@@ -72,7 +72,7 @@
         </div>
       </div>
 
-      <div class="column col-about">
+      <div class="column s-1-5">
         <div class="icon">
           <img class="icon-about" src="icon.png">
         </div>
@@ -87,7 +87,7 @@
         </div>
       </div>
 
-      <div class="column col-about">
+      <div class="column s-1-5">
         <div class="icon">
           <img class="icon-about" src="icon.png">
         </div>
@@ -102,7 +102,7 @@
         </div>
       </div>
 
-      <div class="column col-about">
+      <div class="column s-1-5">
         <div class="icon">
           <img class="icon-about" src="icon.png">
         </div>
@@ -124,12 +124,12 @@
   <div class="new-projects">
     <div class="row m-col-2 l-col-3">
       <div class="column span-full">
-        <h2 class="heading">What's up lately?</h2>
-        <p>Read up on our latest work</p>
+        <h2 class="heading main-heading">What's up lately?</h2>
+        <p class="text main-text">Read up on our latest work</p>
       </div>
 
       <div class="column m-span-full">
-        <figure class="project">
+        <figure class="project big-project">
           <img src="placeholder.svg" alt="placeholder">
             <figcaption class="project-caption">
               <h3 class="heading">Project Title</h3>
@@ -161,8 +161,8 @@
   <div class="latest-projects">
     <div class="row m-col-2 l-col-3">
       <div class="column span-full">
-        <h2 class="heading">Our latest projects</h2>
-        <p>Client happy? We are happy.</p>
+        <h2 class="heading main-heading">Our latest projects</h2>
+        <p class="text main-text">Client happy? We are happy.</p>
       </div>
 
       <div class="column">
@@ -222,7 +222,7 @@
   </div>
 
 <!-- ACCORDION MENU -->
-  <div class="accordion">
+  <div class="accordion s-hidden">
     <div class="row l-col-2">
       <div class="column span-full">
         <h2 class="heading">Thingsofabove</h2>
@@ -238,21 +238,21 @@
   </div>
 
 <!-- SPONSORS -->
-  <div class="sponsors">
+  <div class="sponsors s-hidden">
     <div class="row m-col-5">
-      <div class="column">
+      <div class="column sponsors-img">
         <img src="placeholder.svg" alt="placeholder">
       </div>
-      <div class="column">
+      <div class="column sponsors-img">
         <img src="placeholder.svg" alt="placeholder">
       </div>
-      <div class="column">
+      <div class="column sponsors-img">
         <img src="placeholder.svg" alt="placeholder">
       </div>
-      <div class="column">
+      <div class="column sponsors-img">
         <img src="placeholder.svg" alt="placeholder">
       </div>
-      <div class="column">
+      <div class="column sponsors-img">
         <img src="placeholder.svg" alt="placeholder">
       </div>
   </div>
@@ -261,32 +261,74 @@
 <!-- FOOTER -->
   <footer class="footer">
     <div class="row m-col-2 l-col-4">
-      <div class="column footer__description column span-full">
-        <h3 class="heading-footer">
-          Pewee Herman
-        </h3>
-        <p class="p-footer">Peewee has over 10 years experience in the industry. He is
-          our Creative Director, digital designer, web designer and front-end developer.
-           He is also pretty good with a sketchbook. Before starting the company, Peewee worked 
-           as a designer and a studio manager for a design house who boasted
-           a number of big name clients.
-        </p>
+      <div class="column footer__description span-full s-1-5 m-1-5">
+        <div class="">
+          <img class="icon-peewee" src="icon.png" alt="icon placeholder">
+        </div>
+        <div class="description-footer">
+          <h3 class="heading-footer">
+            Pewee Herman
+          </h3>
+          <p class="p-footer">Peewee has over 10 years experience in the industry. He is
+            our Creative Director, digital designer, web designer and front-end developer.
+            He is also pretty good with a sketchbook. Before starting the company, Peewee worked 
+            as a designer and a studio manager for a design house who boasted
+            a number of big name clients.
+          </p>
+        </div>
       </div>
 
       <div class="column footer__subheading">
-        <h4 class="heading">About Us</h4>
+        <h4 class="heading s-hidden">About Us</h4>
+        <p class="text_subheading s-hidden">Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit. Vestibulum eget arcu leo. 
+          Nulla porta porta varius. Class aptent taciti sociosqu ad 
+          litora torquent per conubia nostra, per inceptos himenaeos. 
+          Nam vitae ligula dignissim dolor pharetra scelerisque. 
+          Mauris vel leo eu urna tempus rutrum.</p>
+        <div class="footer-about-icons">
+          <img class="icon-footer" src="icon.png" alt="icon placeholder">
+          <img class="icon-footer" src="icon.png" alt="icon placeholder">
+          <img class="icon-footer" src="icon.png" alt="icon placeholder">
+          <img class="icon-footer" src="icon.png" alt="icon placeholder">
+          <img class="icon-footer" src="icon.png" alt="icon placeholder">
+        </div>
       </div>
 
-      <div class="column footer__subheading">
+      <div class="column footer__subheading s-hidden">
         <h4 class="heading">Flickr Photos</h4>
       </div>
 
       <div class="column footer__subheading">
         <h4 class="heading">Recent Tweets</h4>
+        <div class="row">
+          <div class="col-tweet">
+            <div class="footer-tweet-icon">
+              <img class="tweet-icon" src="icon.png" alt="placeholder">
+            </div>
+            <p class="tweet"><strong class="username-tweet">@Minions</strong>: lorem ipsum bla bla bla bla bla bla</p>
+          </div>
+          <div class="col-tweet">
+            <div class="footer-tweet-icon">
+              <img class="tweet-icon" src="icon.png" alt="placeholder">
+            </div>
+            <p class="tweet"><strong class="username-tweet">@Minions</strong>: lorem ipsum bla bla bla bla bla bla</p>
+          </div>
+        </div>
       </div>
 
-      <div class="column footer__subheading">
+      <div class="column footer__subheading s-hidden">
         <h4 class="heading">Newsletter</h4>
+        <p class="text_subheading s-hidden">Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit. Vestibulum eget arcu leo. 
+          Nulla porta porta varius. Class aptent taciti sociosqu ad 
+          litora torquent per conubia nostra, per inceptos himenaeos. 
+          Nam vitae ligula dignissim dolor pharetra scelerisque. 
+          Mauris vel leo eu urna tempus rutrum.</p>
+      </div>
+      
+      <div class="column">
+        <img class="colorbar" src="bg_colorbar-1.png" alt="colorbar">
       </div>
     </div>
   </footer>
